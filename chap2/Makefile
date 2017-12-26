@@ -26,3 +26,6 @@ test8:
 
 test9:
 	curl -v http1.0 --digest -u user:pass $(url)/digest
+
+test10:
+	curl -v --http1.0 -x $(url) -U user:pass $(url)/helloworld
